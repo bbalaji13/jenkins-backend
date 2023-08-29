@@ -14,7 +14,7 @@ pipeline {
             steps {
                 // Restart the backend application using PM2 and Python 3 interpreter
                 sh 'pip install flask'  // Ensure Flask is installed
-                sh 'pm2 restart app.py --interpreter=python3'  // Restart the backend using PM2  
+                sh 'pm2 start app.py --interpreter=python3'  // Restart the backend using PM2  
             }
         }
     }
